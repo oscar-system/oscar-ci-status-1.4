@@ -13,15 +13,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="OSCAR continuous integration status" />
 <meta property="og:description" content="OSCAR continuous integration status" />
-<link rel="canonical" href="https://oscar-system.github.io/oscar-ci-status-1.4/" />
-<meta property="og:url" content="https://oscar-system.github.io/oscar-ci-status-1.4/" />
-<meta property="og:site_name" content="oscar-ci-status-1.4" />
+<link rel="canonical" href="https://{{site.data.ci.organization}}.github.io/{{site.data.ci.repo}}/" />
+<meta property="og:url" content="https://{{site.data.ci.organization}}.github.io/{{site.data.ci.repo}}/" />
+<meta property="og:site_name" content="{{site.data.ci.repo}}" />
 <script type="application/ld+json">
-{"headline":"Build {{site.data.ci.build}}","@type":"WebSite","url":"https://oscar-system.github.io/oscar-ci-status-1.4/","name":"oscar-ci-status-1.4","description":"OSCAR continuous integration status","@context":"https://schema.org"}</script>
+{"headline":"Build {{site.data.ci.build}}","@type":"WebSite","url":"{{site.data.ci.repourl}}","name":"{{site.data.ci.repo}}","description":"OSCAR continuous integration status","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/oscar-ci-status-1.4/assets/css/style.css">
-    <link rel="stylesheet" href="/oscar-ci-status-1.4/assets/css/cards.css">
+    <link rel="stylesheet" href="/{{site.data.ci.repo}}/assets/css/style.css">
+    <link rel="stylesheet" href="/{{site.data.ci.repo}}/assets/css/cards.css">
   </head>
   <body>
 
@@ -31,7 +31,7 @@
       </div>
       <div style="float: right; text-align: right; display:inline-block; height: 3rem; line-height: 48px; vertical-align: middle;">
         <a href="index.html">Card view</a> - <a href="table.html">Table view</a>
-       - <a href="https://github.com/oscar-system/oscar-ci-status-1.4">GitHub</a>
+       - <a href="{{site.data.ci.repourl}}">GitHub</a>
       </div>
       <div style="clear: both">
         {% assign tests = site.data.ci.tests | sort: "start" %}
